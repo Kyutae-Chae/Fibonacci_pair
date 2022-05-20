@@ -38,5 +38,5 @@ public static void main(String[] args)
 -> private static int getFibonacciRecursion(int count)
 -> private static void printNumbers()
 ```
-![이미지](https://mblogthumb-phinf.pstatic.net/MjAxNzA2MjVfMTQ1/햣MDAxNDk4MzY5OTMxMjU5.b7T4_iUcVVnDaIxeA9QC6HcIdkipcEd12L_zUHPXwaog.ugJUmnxQvsQFuAEvDqDq6rFjJx07ckLSSaM2dOEvgtYg.PNG.archslave/1.png?type=w800)
+![이미지](https://mblogthumb-phinf.pstatic.net/MjAxNzA2MjVfMTQ1/MDAxNDk4MzY5OTMxMjU5.b7T4_iUcVVnDaIxeA9QC6HcIdkipcEd12L_zUHPXwaog.ugJUmnxQvsQFuAEvDqDq6rFjJx07ckLSSaM2dOEvgtYg.PNG.archslave/1.png?type=w800)
 
