@@ -2,7 +2,9 @@ package example;
 
 import java.util.Scanner;
 
-public class Fibonacci_1 {
+public class Fibonacci_2 {
+    static int sCount;
+    static int[] sFibonacci;
     private static int getUserInput() {
         //2. 수열의 갯수 입력받기
         Scanner scan = new Scanner(System.in);
@@ -24,23 +26,28 @@ public class Fibonacci_1 {
         scan.close(); //scanner close
         return count;
     }
+
+    private static void getFibonacci() {
+        sFibonacci = new int[sCount];
+        sFibonacci[0] = sFibonacci[1] = 1;
+        for (int i = 2; i < sCount; i++) {
+            sFibonacci[i] = sFibonacci[i-2] + sFibonacci[i-1];
+        }
+    }
+
     public static void main(String [] args) {
         //1. 시작 안내문구 출력
         System.out.println("[안내]피보나치 수열 프로그램 시작.");
         //2. 수열의 갯수 입력받기
         //수열의 개수
-        int count = getUserInput();
+        sCount = getUserInput();
 
         //3. fibonacci 배열 생성 & 연산
-        int[] fibonacci = new int[count];
-        fibonacci[0] = fibonacci[1] = 1;
-        for (int i = 2; i < count; i++) {
-            fibonacci[i] = fibonacci[i-2] + fibonacci[i-1];
-        }
+        getFibonacci();
 
         //4. 수열 출력하기
-        for (int i = 0; i < count; i++) {
-            System.out.println(fibonacci[i]);
+        for (int i = 0; i < sCount; i++) {
+            System.out.println(sFibonacci[i]);
         }
 
         //5. 종료 메세지 출력

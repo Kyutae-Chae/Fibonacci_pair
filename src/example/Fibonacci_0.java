@@ -4,13 +4,12 @@ import java.util.Scanner;
 
 public class Fibonacci_0 {
     public static void main(String [] args) {
-        Scanner scan;
-        int count; //수열의 개수
 
         //1. 시작 안내문구 출력
         System.out.println("[안내]피보나치 수열 프로그램 시작.");
         //2. 수열의 갯수 입력받기
-        scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
+        int count; //수열의 개수
         while (true) {
             System.out.print("원하는 수열의 개수를 입력해 주세요 : ");
             if (!scan.hasNextInt()) {
@@ -25,7 +24,7 @@ public class Fibonacci_0 {
             }
             break;
         }
-        System.out.println("count : "+count);
+        scan.close(); //scanner close
 
         //3. fibonacci 배열 생성 & 연산
         int[] fibonacci = new int[count];
@@ -42,7 +41,5 @@ public class Fibonacci_0 {
 
         //5. 종료 메세지 출력
         System.out.println("[안내]프로그램을 종료합니다.");
-
-        scan.close(); //scanner close
     }
 }
