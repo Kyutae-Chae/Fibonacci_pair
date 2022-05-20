@@ -28,3 +28,7 @@ private static void printNumbers()
 메서드의 입력 : 숫자 배열  
 메서드의 출력 : 없음  
 반환 데이터 타입 : void
+
+### Fibonacci_4.java : 나만의 프로그램
+getFibonacci 함수를 재귀를 이용하여 구현한다.
+
